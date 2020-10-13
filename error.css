@@ -1,0 +1,68 @@
+body{
+    background: linear-gradient(to top, #8F57FD 0%, rgb(33,192,139) 100%);
+    background-repeat: no-repeat;
+    height: auto;
+    font-family: 'Mulish', sans-serif;
+    color: white;
+}
+.error{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(105vh - 200px);
+}
+
+.header{
+    color: white;
+    height: 100px;
+    top: 0px;
+    width: 100%;
+}
+.header__img{
+    margin-left: 30px;
+    width: 200px;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+}
+
+.footer a{
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover{
+    text-decoration: underline;
+}
+
+.error h1{
+    font-size: 80px;
+    margin-bottom: 0;
+}
+
+.error p{
+    margin-top: 0;
+}
+
+.animated {
+    animation-duration: 3s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes pulse {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.1);}
+    100% {transform: scale(1);}
+  }
+  .pulse {
+    animation-name: pulse;
+    animation-duration: 1s;
+  }
